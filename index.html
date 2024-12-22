@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECES Code Compiler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <header>
+        <div id="title">
+          <h3>ECES Code Compiler</h3>
+        </div>
+      </header>
+      <main>
+        <div class="editor-block">
+          <div class="editor-block-top-bar">
+            <div class="editor-block-top-bar-name">Code</div>
+            <button id="run-button">Run</button>
+            <label id="language-scrolldown" for="language">
+              Select language:
+              <select name="language" id="language">
+                <option value="c++">C++</option>
+                <option value="python">Python</option>
+                <option value="java">java</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <textarea name="code" id="code" placeholder="Enter your code here"></textarea>
+          </div>
+        </div>
+        <div class="terminal-block">
+          <div class="terminal-block-top-bar">
+            <div class="terminal-block-top-bar-name">Terminal</div>
+            <button id="clear-button">Clear</button>
+          </div>
+          <div>
+            <textarea name="terminal" id="terminal" placeholder="Provide inputs here if required"></textarea>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
